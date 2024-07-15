@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Solutions - PDF to Img</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Pic2Pdf</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Img to PDF</a></li>
+            <li><a href="pdf_to_img.html">PDF to Img</a></li>
+            <li><a href="compress_pdf.html">Compress PDF</a></li>
+            <li><a href="edit_pdf.html">Edit PDF</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Convert PDF to Image</h1>
+        </header>
+        <div class="upload-section">
+            <input type="file" id="pdfInput">
+            <button id="pdfToImgButton">Convert to Image</button>
+        </div>
+        <div id="loadingBar" class="loading-bar hidden"></div>
+        <div id="imgResult" class="hidden">
+            <div id="imageContainer"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.8.335/pdf.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

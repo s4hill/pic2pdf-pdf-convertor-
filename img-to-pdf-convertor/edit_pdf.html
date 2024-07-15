@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Solutions - Edit PDF</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Pic2Pdf</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Img to PDF</a></li>
+            <li><a href="pdf_to_img.html">PDF to Img</a></li>
+            <li><a href="compress_pdf.html">Compress PDF</a></li>
+            <li><a href="edit_pdf.html">Edit PDF</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Edit PDF</h1>
+        </header>
+        <div class="upload-section">
+            <input type="file" id="pdfEditInput">
+            <button id="editButton">Edit PDF</button>
+        </div>
+        <div id="loadingBar" class="loading-bar hidden"></div>
+        <div id="editResult" class="hidden">
+            <a id="editedDownloadLink" href="#" download="edited.pdf">Download Edited PDF</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.8.335/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
